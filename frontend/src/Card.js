@@ -1,4 +1,3 @@
-import Button from "./Button.js";
 
 function Card(props) {
 
@@ -13,9 +12,9 @@ function Card(props) {
                 <input placeholder="Password"></input>
             </div>
             <p></p>
-                <Button name="Sign In" type="submit">Sign In</Button>
+                <button className="button" name="Sign In" type="submit">Sign In</button>
             <p>Don't have an account?</p>
-            <Button name="Sign Up">Sign Up</Button>
+            <button className="button" name="Sign Up">Sign Up</button>
             
             
         </div>
