@@ -1,14 +1,18 @@
+import ReactDOM from 'react-dom/client';
+import React from 'react';
+import Register from './Register';
 
 function Button(props) {
 
     const handleAuth = (name) => {
-        if (name == "Sign In") {
-            console.log("Logging In...");
-        } else if ( name == "Sign Up"){
-            console.log("Redirecting you to the registration page...");
+        if (name == "Sign Up") {
+            const root = ReactDOM.createRoot(document.getElementById('root'));
+                root.render(
+                <Register/>
+                );
+            }
+                        
         }
-        
-    }
 
     return(
         <div>
