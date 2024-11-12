@@ -1,11 +1,10 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import laptop from "../images/laptop.jpeg";
+import '../styles/login.css';
 
 function Login() {
-
-   
+       
     return(
 
         <div className="login-container">

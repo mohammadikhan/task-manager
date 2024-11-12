@@ -1,0 +1,134 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f0f2f5; */
+}
+
+/* Main card styling */
+.login-card {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color:#c6ae7bec;
+}
+
+
+/* Left side styling with background image */
+.login-left {
+    width: 50%;
+    background: url('../images/laptop.jpeg') center/cover no-repeat;
+    object-fit: cover;
+    color: #fff;
+    padding: 40px 30px;
+    display:inline;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-left h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ded1d1;
+
+}
+
+.login-left p {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
+    text-align: center;
+    font-size: 16px;
+    color: #ded1d1;
+    margin-top: 220px;
+    display: flex;
+    
+}
+
+.login-right {
+    width: 50%;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.login-title {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #494848;
+    text-align: center;
+}
+
+/* Form styling */
+.login-form .input-group {
+    margin-bottom: 15px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
+    box-sizing: border-box;
+}
+
+.forgot-password-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
+    color: #494848;
+    text-decoration: none;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #eed19b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
+    color: #494848;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.login-button:hover {
+    background-color: #d5bf83;
+}
+
+/* Sign-up prompt styling */
+.signup-prompt {
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
+    color: #494848;
+    text-align: center;
+}
+
+.signup-link {
+    color: #494848;
+    font-weight: bolder;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
