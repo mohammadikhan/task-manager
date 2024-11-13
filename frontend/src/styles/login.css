@@ -9,32 +9,39 @@
 /* Main card styling */
 .login-card {
     display: flex;
-    width: 800px;
-    height: 400px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 800px; 
+    width: 100%;
+    background-color: #c6ae7bec;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
-    background-color:#c6ae7bec;
+    margin: 20px;
 }
 
 
 /* Left side styling with background image */
 .login-left {
-    width: 50%;
     background: url('../images/laptop.jpeg') center/cover no-repeat;
-    object-fit: cover;
+    /* object-fit: cover; */
     color: #fff;
-    padding: 40px 30px;
+    /* padding: 40px 30px; */
     display:inline;
     flex-direction: column;
     justify-content: center;
 }
 
 .login-left h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
     color: #ded1d1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
 
+.login-left, .login-right {
+    padding: 20px;
+    flex: 1;
+    box-sizing: border-box;
 }
 
 .login-left p {
@@ -42,23 +49,23 @@
     text-align: center;
     font-size: 16px;
     color: #ded1d1;
-    margin-top: 220px;
+    margin-top: 250px;
     display: flex;
     
 }
 
-.login-right {
+/* .login-right {
     width: 50%;
     padding: 40px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-}
+} */
 
 .login-title {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     margin-bottom: 20px;
     color: #494848;
@@ -97,8 +104,7 @@
 .login-button {
     width: 100%;
     padding: 12px;
-    background-color: #eed19b;
-    color: #fff;
+    background-color: #eed89b;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -123,8 +129,8 @@
 }
 
 .signup-link {
-    color: #494848;
-    font-weight: bolder;
+    color: #494848d3;
+    font-weight: bold;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
     text-decoration: none;
 }

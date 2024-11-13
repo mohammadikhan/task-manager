@@ -4,14 +4,13 @@ import { Link } from "react-router-dom";
 import '../styles/login.css';
 
 function Login() {
-       
-    return(
 
+    return(
         <div className="login-container">
         <div className="login-card">
             <div className="login-left">
                 <h2 className="login-title">Welcome Back!</h2>
-                <p> Resume Managing Your Workflow Effortlessly. </p>
+                <p> Resume Managing Your Workflow Effortlessly.</p>
             </div>
             <div className="login-right">
                 <h2 className="login-title">Login</h2>
@@ -26,7 +25,7 @@ function Login() {
                     <button className="login-button" type="submit">Log In</button>
                 </form>
                 <p className="signup-prompt">
-                    Don’t have an account? <Link to="/register" className="signup-link">Sign up</Link>
+                    Don’t have an account? <Link to="/register" className="signup-link">Sign Up</Link>
                 </p>
             </div>
         </div>

@@ -1,0 +1,117 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-card {
+    display: flex;
+    max-width: 800px; 
+    width: 100%;
+    background-color: #c6ae7bec;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.register-left, .register-right {
+    padding: 20px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.register-left {
+    background-color: #eed89b;
+    background: url('../images/laptop.jpeg') center/cover no-repeat;
+    color: #333;
+    display: inline;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.register-left h2{
+    color: #ded1d1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.register-left p {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
+    text-align: center;
+    font-size: 16px;
+    color: #ded1d1;
+    margin-top: 300px;
+    display: flex;
+}
+
+
+
+.register-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
+    text-align: center;
+    color: #494848;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.register-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
+    box-sizing: border-box;
+}
+
+.register-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #eed89b;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
+    color: #494848;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.register-button:hover {
+    background-color: #d5bf83; /* Hover color */
+}
+
+.register-prompt {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
+    color: #494848;
+    margin-top: 15px;
+}
+
+.login-link {
+    color: #494848d3;
+    font-weight: bold;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
