@@ -3,7 +3,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/register.css'
 
-const Register = () =>{
+const Register = () => {
+
+    const submit = async () => {
+        const passWord = document.getElementById("pass").value;
+        const verify = document.getElementById("verify").value;
+
+        if (passWord === verify){
+            alert("PASSWORDS DO NOT MATCH")
+        }
+       //console.log(passWord);
+    }
 
     return (
         <div className="register-container">
@@ -14,7 +24,7 @@ const Register = () =>{
             </div>
             <div className="register-right">
                 <h2 className="register-title">Create Your Account</h2>
-                <form className="register-form">
+                <form onSubmit={submit} className="register-form">
                     <div className="input-group">
                         <input type="email" placeholder="Email" className="register-input" required />
                     </div>
@@ -22,10 +32,10 @@ const Register = () =>{
                         <input type="username" placeholder="Username" className="register-input" required />
                     </div>
                     <div className="input-group">
-                        <input type="password" placeholder="Password" className="register-input" required />
+                        <input type="password" id="pass" placeholder="Password" className="register-input" required />
                     </div>
                     <div className="input-group">
-                        <input type="password" placeholder="Verify Password" className="register-input" required />
+                        <input type="password" id="verify" placeholder="Verify Password" className="register-input" required />
                     </div>
                     <button className="register-button" type="submit">Register</button>
                 </form>

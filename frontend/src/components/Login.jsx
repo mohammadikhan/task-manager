@@ -1,9 +1,20 @@
 
 import React from "react";
+import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import '../styles/login.css';
 
-function Login() {
+const Login = () => {
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm();
+
+    const submit = async (data) => {
+        console.log("Submit");
+    }
 
     return(
         <div className="login-container">
@@ -14,7 +25,7 @@ function Login() {
             </div>
             <div className="login-right">
                 <h2 className="login-title">Login</h2>
-                <form className="login-form">
+                <form onSubmit={handleSubmit(submit)} className="login-form">
                     <div className="input-group">
                         <input type="email" placeholder="Email" className="login-input" required />
                     </div>
